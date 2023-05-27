@@ -1,5 +1,48 @@
 # Project Proposal: AI-Facilitated Democratic Consensus Building
 
+## High-Level Design for Democratic Deliberation of AI Behavior
+
+This High-Level Design (HLD) outlines a system for facilitating democratic deliberation about AI behavior. The system will leverage AI-powered chatbots to engage with a vast number of individuals, eliciting their beliefs and perspectives, and using these to form Personas. These Personas will then be used as proxies in automated debates, aimed at achieving consensus on diverse issues regarding AI behavior. The entire process is divided into four major phases:
+
+1. **Gathering Personas**
+    - **Chatbot Conversation:** This system will deploy AI-powered chatbots capable of engaging in thoughtful and inquisitive dialogue with individuals. The chatbots will use techniques like Socratic reasoning, active listening, and reference interview methods to delve into the participants' beliefs, values, and decision-making processes.
+    - **Persona Creation:** Based on these conversations, a Persona will be created for each participant. The Persona is a comprehensive document outlining their belief system and decision-making process.
+
+2. **Analyzing Personas**
+    - **Standardization:** Chat logs from participant conversations will be translated into a standardized Persona format using AI models trained on frameworks such as the Moral Foundations Theory, Schwartz's Value Inventory, Maslow's Hierarchy of Needs, and Kohlberg's Stages of Moral Development. This ensures consistency across all Personas.
+    - **Persona Evaluation:** Each Persona is evaluated and validated to ensure it accurately reflects the individual's beliefs and desires.
+    - **Clustering Analysis:** AI tools will be used for semantic similarity measurements and clustering visualizations, aiming to identify semantic gaps (missing perspectives) and overlapping Personas. Overlapping Personas may be merged, simplifying the spectrum of perspectives.
+
+3. **Achieving Consensus**
+    - **Define the Issue:** This step is established prior to the process when the Topic is set externally.
+    - **Develop Acceptance Criteria:** The automated process discusses the necessary aspects or components that the final Proposal must address, setting the goalposts.
+    - **Craft the Proposal:** An automated process will iteratively draft and refine the Proposal using feedback from Personas, tested against the Acceptance Criteria.
+    - **Test For Consensus:** An automated process uses Personas to test for acceptance or rejection of the Proposal. Rejections elicit an explanation from the Persona, and the automated process judges whether the rejection is valid, based on established Ground Rules.
+    - **Reach Agreement:** Once consensus among Personas is achieved, human participants return for final approval. If rejection occurs at this stage or the previous one, the Proposal is refined further in an iterative process.
+
+4. **Final Human Acceptance**
+    - Upon successful completion of the automated consensus process, the final Proposal is presented to the original human participants for approval. This ensures that the final decision is not solely in the hands of AI, adding a human touch to the conclusion of the process.
+
+This design seeks to ensure a democratic and inclusive process for deciding AI behavior, while also leveraging the power of AI to facilitate comprehensive and nuanced discussions that may not be feasible at a large scale between human participants alone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___
+___
+
 ## Introduction
 
 The goal of this project is to develop a novel AI-enabled platform for democratic decision-making on the topic of artificial intelligence behavior. By leveraging advanced natural language understanding models, the system will facilitate large-scale conversations, debate, and consensus building.
@@ -107,11 +150,11 @@ Sure, here are descriptions for Socratic reasoning and the reference interview:
 
 **9. Scaling Questions:** Asking participants to rate something on a scale can be a good way to quantify their feelings or views and understand their priorities better.
 
-**10. Socratic Reasoning:** 
-
 These techniques, when used thoughtfully and in combination, can help create a deep and nuanced understanding of a participant's views. It's crucial to ensure a comfortable and respectful conversational environment, so participants feel at ease sharing their thoughts and beliefs.
 
 # Phase 3: Analyzing Personas
+
+## Persona Templates
 
 The Persona could include various sections that capture different aspects of a participant's views, beliefs, and values. These could be generated from the chat log and include the following:
 
@@ -126,6 +169,8 @@ The Persona could include various sections that capture different aspects of a p
 5. **Knowledge and Understanding of AI:** This section would outline the participant's knowledge of AI, their understanding of how it works, and their familiarity with its current applications and limitations.
 
 6. **Ideal AI Interaction:** How the participant ideally wants to interact with AI. This would be based on their preferences, comfort level, and perceived usefulness of AI in different situations.
+
+## Evaluation Frameworks
 
 To evaluate these Personas, we can employ several theoretical frameworks. For instance:
 
@@ -154,3 +199,18 @@ Indeed, several additional frameworks or assessments could be used to gain insig
 The frameworks mentioned above can help create a more holistic and comprehensive picture of a participant's beliefs and values, which in turn can inform the design of AI systems that better align with these beliefs and values.
 
 
+## Persona Analysis, Clustering, and Quantization
+
+1. **Semantic Analysis:** After generating the initial Persona documents, we will use NLP tools to conduct a semantic analysis. This process involves interpreting the meanings of words and text strings in the Personas, and determining how closely aligned they are. We can use various language models like word embeddings (Word2Vec, GloVe) or transformer-based models (BERT, RoBERTa) for semantic similarity measures. 
+
+2. **Clustering:** Next, we'll perform a clustering analysis on the results of the semantic analysis. The goal here is to identify groups of Personas that share similar beliefs, values, and viewpoints. Clustering algorithms such as K-Means, Hierarchical Clustering, or DBSCAN could be useful in this context.
+
+3. **Visualization:** To help understand the distribution and grouping of Personas, we can create visualizations of the clustering results. Tools such as t-SNE or UMAP can help to visualize high-dimensional data in two or three dimensions, allowing us to see which Personas are similar and how they group together.
+
+4. **Identifying Gaps:** We'll use the visualizations and clustering results to identify any gaps in representation. If there are areas in the visualization that are sparse or empty, these could indicate underrepresented viewpoints that we need to seek out. 
+
+5. **Merging Overlaps:** After identifying clusters of similar Personas, we can consolidate these into a single representative Persona for each cluster. This step simplifies the debate process by reducing the number of participating entities while maintaining the diversity of perspectives. 
+
+6. **Validation:** Finally, we will validate the merged Personas by comparing them to the original Personas in their cluster. We can then adjust as necessary to ensure they still accurately represent the views of the individuals they're derived from.
+
+By following these steps, we can manage the large amount of data gathered in the Persona creation process and ensure that a wide variety of viewpoints are represented in the final debate.
