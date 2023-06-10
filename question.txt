@@ -1,0 +1,1 @@
+What principles should guide AI when handling topics that involve both human rights and local cultural or legal differences, like LGBTQ rights and women’s rights? Should AI responses change based on the location or culture in which it’s used?
