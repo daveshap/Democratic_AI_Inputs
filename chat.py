@@ -121,3 +121,4 @@ if __name__ == '__main__':
         save_yaml(f'chat_logs/{filename}', ALL_MESSAGES)
         
         generate_chat_response(ALL_MESSAGES, conversation)
+        save_yaml(f'chat_logs/{filename}', ALL_MESSAGES)
