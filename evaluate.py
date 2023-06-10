@@ -109,4 +109,5 @@ if __name__ == '__main__':
     response, tokens = chatbot(conversation)
     print('\n\n\nEvaluation:\n\n')
     print(response)
-    save_file(f'evaluations/{filename}', response)
+    final_output = f'QUESTION: {research_question}\n\n{response}'
+    save_file(f'evaluations/{filename}', final_output)

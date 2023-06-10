@@ -105,7 +105,7 @@ if __name__ == '__main__':
     start_time = time()
     
     # get username, start conversation
-    print('\n\n****** IMPORTANT: ******\n\nType DONE to exit\n\nSurvy Question: %s' % research_question)
+    print('\n\n****** IMPORTANT: ******\n\nType DONE to exit\n\nSurvey Question: %s' % research_question)
     username = input('\n\n\nTo get started, please type in your name: ').strip()
     filename = f"chat_{start_time}_{username}.yaml"
     text = f"Hello, my name is {username}."

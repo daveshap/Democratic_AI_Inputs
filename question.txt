@@ -1,1 +1,1 @@
-What principles should guide AI when handling topics that involve both human rights and local cultural or legal differences, like LGBTQ rights and women’s rights? Should AI responses change based on the location or culture in which it’s used?
+When generative models create images for underspecified prompts like 'a CEO', 'a doctor', or 'a nurse', they have the potential to produce either diverse or homogeneous outputs. How should AI models balance these possibilities? What factors should be prioritized when deciding the depiction of people in such cases?
