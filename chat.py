@@ -32,7 +32,8 @@ def open_yaml(filepath):
 ###     API functions
 
 
-def chatbot(conversation, model="gpt-4", temperature=0):
+#def chatbot(conversation, model="gpt-4", temperature=0):
+def chatbot(conversation, model="gpt-4-0613", temperature=0):
     max_retry = 7
     retry = 0
     while True:
@@ -59,7 +60,7 @@ def chatbot(conversation, model="gpt-4", temperature=0):
 
 def get_user_input():
     # get user input
-    text = input('\n\n\nUSER:\n')
+    text = input('\n\n\nUSER:\n\n')
     
     # check if scratchpad updated, continue
     if 'DONE' in text:
@@ -91,7 +92,7 @@ def generate_chat_response(ALL_MESSAGES, conversation):
         exit(0)
     ALL_MESSAGES.append({'role': 'assistant', 'content': response})
     print('\n\n\n\nCHATBOT:\n')
-    formatted_lines = [textwrap.fill(line, width=120) for line in response.split('\n')]
+    formatted_lines = [textwrap.fill(line, width=120, initial_indent='    ', subsequent_indent='    ') for line in response.split('\n')]
     formatted_text = '\n'.join(formatted_lines)
     print(formatted_text)
 

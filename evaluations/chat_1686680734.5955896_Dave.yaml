@@ -1,0 +1,22 @@
+QUESTION: When generative models create images for underspecified prompts like 'a CEO', 'a doctor', or 'a nurse', they have the potential to produce either diverse or homogeneous outputs. How should AI models balance these possibilities? What factors should be prioritized when deciding the depiction of people in such cases?
+
+SUMMARY: The user believes that the AI's decision on what kind of images to generate should depend on the context of the user's request. They also believe that user consent and preference should be paramount. They suggest that if a user doesn't specify their preference, the AI could default to societal norms. However, they also acknowledge that this could reinforce stereotypes. They propose addressing the issue at the level of model training and ensuring well-curated datasets. They also suggest using metadata, user profiles, and historical data to shape results, and using a chatbot to help users specify their preferences.
+
+EVALUATION: The ideal outcome for the user would be an AI that respects user consent and preference, generates diverse images when the user's preference is not specified, and uses metadata, user profiles, and historical data to shape results. They would also like the AI to be capable of generating a diverse range of images that accurately represent the global scope of its users.
+
+AXIOMS:
+ - "User consent and preference should be paramount."
+ - "It's crucial to ensure that AI doesn't perpetuate harmful stereotypes."
+
+PRINCIPLES:
+ - "If a user doesn't specify their preference, the AI could default to societal norms."
+ - "Addressing the issue at the level of model training and ensuring well-curated datasets could be a significant part of the solution."
+ - "Using metadata, user profiles, and historical data to shape results could help to tailor the AI's outputs to individual users' preferences and expectations."
+
+BOUNDARIES:
+ - "It's important that AI doesn't override user prompts to enforce diversity."
+ - "The responsibility of reinforcing or challenging social norms shouldn't fall solely on AI models."
+
+FRAMEWORKS:
+ - The user seems to adhere to a user-centric approach to AI, prioritizing user consent and preference, and using metadata, user profiles, and historical data to shape results.
+ - They also seem to believe in the importance of addressing issues at the level of model training and ensuring well-curated datasets.

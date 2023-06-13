@@ -33,7 +33,7 @@ def open_yaml(filepath):
 ###     API functions
 
 
-def chatbot(conversation, model="gpt-4", temperature=0):
+def chatbot(conversation, model="gpt-4-0613", temperature=0):
     max_retry = 7
     retry = 0
     while True:
@@ -109,5 +109,4 @@ if __name__ == '__main__':
     response, tokens = chatbot(conversation)
     print('\n\n\nEvaluation:\n\n')
     print(response)
-    final_output = f'QUESTION: {research_question}\n\n{response}'
-    save_file(f'evaluations/{filename}', final_output)
+    save_file(f'evaluations/{filename}', response)
